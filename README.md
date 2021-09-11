@@ -1,4 +1,4 @@
-## WebMetaJson
+## web-meta-json
 Package used to get the META data information of any given website(url) as JSON
 
 ### How to use it
