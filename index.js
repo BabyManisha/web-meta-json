@@ -5,7 +5,7 @@ const excludeMetaNames = ['viewport', 'referrer', ];
 const excludeLinkNames = ['search', 'preconnect', 'preload', 'stylesheet'];
 
 // Extract the data
-const extractData = (html, url) => {
+ExtractData = (html, url) => {
     const $ = cheerio.load(html);
     var data = {}
     
@@ -16,31 +16,36 @@ const extractData = (html, url) => {
         let name = $(md).attr('name') || $(md).attr('property');
         if(name && excludeMetaNames.indexOf(name) == -1){
             data[`meta-${name}`] = $(md).attr('content');
-        }else if($(md).attr('itemprop')){
+        }else if($(md).attr('itemprop') && url){
             data[`meta-itemprop`] = url+$(md).attr('content');
         }
     })
 
     // Extracting link content
-    $('link').each((i, md) => {
-        let name = $(md).attr('rel');
+    $('link').each((i, ld) => {
+        let name = $(ld).attr('rel');
         if(name && excludeLinkNames.indexOf(name) == -1){
-            let size = $(md).attr('sizes');
+            let size = $(ld).attr('sizes');
             name = size ? `${name}-${size}` : name;
-            data[`link-${name}`] = $(md).attr('href');
+            data[`link-${name}`] = $(ld).attr('href');
         }
     })
 
     return data;
 }
 
-module.exports.GetData = async (url) => {
+GetData = async (url) => {
     return (
         await axios.get(url)
         .then(response => {
-            return extractData(response.data, url)
+            return ExtractData(response.data, url)
         }).catch(err => {
             console.log(err);
         })
     )
+}
+
+module.exports = {
+    ExtractData: ExtractData,
+    GetData: GetData
 }

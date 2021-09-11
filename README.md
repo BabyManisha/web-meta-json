@@ -1,6 +1,10 @@
 ## web-meta-json
 Package used to get the META data information of any given website(url) as JSON
 
+*   v1.0.0 - Support only URL as input.
+*   v2.0.0 - Support both URL or HTML content as input.
+
+
 ----
 
 ### How to use it
@@ -22,6 +26,26 @@ Package used to get the META data information of any given website(url) as JSON
         console.log(error);
     });
     ```
+
+4. #v2.0.0 - Call the `ExtractData` function in `WebMetaJson` and send the raw html data as a first param and url(example: https://babymanisha.com) as a second parameter (optional), which will return JSON as output.
+    ```
+    const htmlData = `
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>This is Sample Page</title>
+        </head>
+        <body>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+        </body>
+    </html>
+    `
+    console.log(WebMetaJson.ExtractData(htmlData));
+    ```
+*   Refer [this](./example.js) for more examples.
 ----
 
 ### Sample output format
@@ -98,7 +122,7 @@ Package used to get the META data information of any given website(url) as JSON
 
 ----
 
-~Reach babymaneesha@gmail.com, if you need any further assistance on this.~
+Reach babymaneesha@gmail.com, if you need any further assistance on this.
 
 Happy Coding!
 
