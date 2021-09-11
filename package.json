@@ -1,6 +1,6 @@
 {
   "name": "web-meta-json",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get meta data of any web app as JSON",
   "main": "index.js",
   "repository": {
@@ -10,11 +10,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "web-json",
-    "web-scrapping",
-    "web-meta"
-  ],
   "author": {
     "name": "BabyManisha.Sunkara",
     "email": "babymaneesha@gmail.com",
@@ -29,5 +24,16 @@
   "dependencies": {
     "axios": "^0.21.4",
     "cheerio": "^1.0.0-rc.10"
-  }
+  },
+  "keywords": [
+    "web-json",
+    "web-scrapping",
+    "web-meta",
+    "extract",
+    "meta",
+    "parse",
+    "tags",
+    "meta",
+    "json"
+  ]
 }
