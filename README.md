@@ -2,14 +2,14 @@
 Package used to get the META data information of any given website(url) as JSON
 
 ### How to use it
-1. Install `WebMetaJson`
+1. Install `web-meta-json`
     ```
-    npm i WebMetaJson --save
+    npm i web-meta-json --save
     ```
 
-2. Import `WebMetaJson`
+2. Import `web-meta-json`
     ```
-    const WebMetaJson = require('WebMetaJson');
+    const WebMetaJson = require('web-meta-json');
     ```
 
 3. Call the `GetData` function in `WebMetaJson` and send the url(example: https://babymanisha.com) as a parameter, which will return promise as output.

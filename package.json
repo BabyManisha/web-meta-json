@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Get meta data of any web app as JSON",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BabyManisha/web-meta-json.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +15,17 @@
     "web-scrapping",
     "web-meta"
   ],
-  "author": "BabyManisha.Sunkara",
+  "author": {
+    "name": "BabyManisha.Sunkara",
+    "email": "babymaneesha@gmail.com",
+    "url": "https://babymanisha.com"
+  },
   "license": "MIT",
+  "bugs": {
+    "email": "babymaneesha@gmail.com",
+    "url": "https://github.com/BabyManisha/web-meta-json/issues"
+  },
+  "homepage": "https://github.com/BabyManisha/web-meta-json#readme",
   "dependencies": {
     "axios": "^0.21.4",
     "cheerio": "^1.0.0-rc.10"
