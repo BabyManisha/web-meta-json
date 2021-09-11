@@ -1,6 +1,8 @@
 ## web-meta-json
 Package used to get the META data information of any given website(url) as JSON
 
+----
+
 ### How to use it
 1. Install `web-meta-json`
     ```
@@ -20,6 +22,8 @@ Package used to get the META data information of any given website(url) as JSON
         console.log(error);
     });
     ```
+----
+
 ### Sample output format
 *   Title will shows with `title` keyword
 *   All `<meta>` tag contents will be shows with keywords that start with key `meta-`
@@ -81,6 +85,7 @@ Package used to get the META data information of any given website(url) as JSON
         "link-alternate":"android-app://com.medium.reader/https/medium.com/p/68690a68cba8"
     }
     ```
+----
 
 ### Total Time of Execution - On an Average 20 ms
 
