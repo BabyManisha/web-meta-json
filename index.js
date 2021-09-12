@@ -41,6 +41,7 @@ GetData = async (url) => {
             return ExtractData(response.data, url)
         }).catch(err => {
             console.log(err);
+            return {}
         })
     )
 }
