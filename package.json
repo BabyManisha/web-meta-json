@@ -1,6 +1,6 @@
 {
   "name": "web-meta-json",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Get meta data of any web app as JSON",
   "main": "index.js",
   "repository": {
