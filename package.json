@@ -1,6 +1,6 @@
 {
   "name": "web-meta-json",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Get meta data of any web app as JSON",
   "main": "index.js",
   "repository": {
@@ -8,7 +8,8 @@
     "url": "git@github.com:BabyManisha/web-meta-json.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": {
     "name": "BabyManisha.Sunkara",

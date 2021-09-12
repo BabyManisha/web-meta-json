@@ -1,5 +1,5 @@
 ## web-meta-json
-Package used to get the META data information of any given website(url) as JSON
+Package used to get the META data information of any given website(URL) as JSON
 
 *   v1.0.0 - Support only URL as input.
 *   v2.0.0 - Support both URL or HTML content as input.
@@ -18,7 +18,7 @@ Package used to get the META data information of any given website(url) as JSON
     const WebMetaJson = require('web-meta-json');
     ```
 
-3. Call the `GetData` function in `WebMetaJson` and send the url(example: https://babymanisha.com) as a parameter, which will return promise as output.
+3. Call the `GetData` function in `WebMetaJson` and send the URL(example: https://babymanisha.com) as a parameter, which will return promise as output.
     ```
     WebMetaJson.GetData('https://babymanisha.com').then(response => {
         console.log(response);
@@ -27,7 +27,7 @@ Package used to get the META data information of any given website(url) as JSON
     });
     ```
 
-4. #v2.0.0 - Call the `ExtractData` function in `WebMetaJson` and send the raw html data as a first param and url(example: https://babymanisha.com) as a second parameter (optional), which will return JSON as output.
+4. #v2.0.0 - Call the `ExtractData` function in `WebMetaJson` and send the raw html data as a first param and URL(example: https://babymanisha.com) as a second parameter (optional), which will return JSON as output.
     ```
     const htmlData = `
     <!DOCTYPE html>
@@ -118,6 +118,11 @@ Package used to get the META data information of any given website(url) as JSON
 | https://babymanisha.com   | 170 ms        | 200 ms                      |
 | https://www.google.com    | 550 ms        | 670 ms                      |
 | https://medium.com/@maneeshamanshumahadevsunkara/babymanisha-sunkara-68690a68cba8 | 288 ms | 298 ms |
+
+
+----
+### Pro Tip
+It also has the API service refer [this](./https://rapidapi.com/babymaneesha/api/web-meta-json/) for more information.
 
 
 ----
