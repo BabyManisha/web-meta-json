@@ -122,7 +122,7 @@ Package used to get the META data information of any given website(URL) as JSON
 
 ----
 ### Pro Tip
-It also has the API service refer [this](./https://rapidapi.com/babymaneesha/api/web-meta-json/) for more information.
+It also has the API service refer [this](https://rapidapi.com/babymaneesha/api/web-meta-json/) for more information.
 
 
 ----
